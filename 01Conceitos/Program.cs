@@ -1,5 +1,5 @@
 ﻿using System;
-namespace _01Conceitos
+/*namespace _01Conceitos
 {
     class Program
     {
@@ -8,4 +8,6 @@ namespace _01Conceitos
             Console.WriteLine("Hello, World!");
         }
     }
-}
+}*/
+
+
