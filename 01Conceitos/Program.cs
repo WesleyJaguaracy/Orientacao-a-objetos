@@ -6,7 +6,13 @@ namespace _01Conceitos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+            //Instanciar um objeto
+            Pessoa obj = new Pessoa();
+            obj.nome = "Ralf";
+            obj.idade = 30;
+            obj.mensagem();
+
         }
     }
 }
