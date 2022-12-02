@@ -13,9 +13,50 @@ class Pessoa
     }
 
     //Situação
-    public string situação()
+    public string situacao(double imc)
     {
-        
+        //Variável
+        string retorno;
+
+        //Condicional
+        if(imc < 18.5)
+        {
+            retorno = "Abaixo do peso";
+        }
+        else if(imc < 25)
+        {
+            retorno = "Peso normal";
+        }
+        else if(imc < 30)
+        {
+            retorno = "Acima do peso";
+        }
+        else if(imc < 35)
+        {
+            retorno = "Obedidade I";
+        }
+        else if(imc < 40)
+        {
+            retorno = "Obedidade II";
+        }
+        else
+        {
+            retorno = "Obedidade III";
+        }
+    }
+
+    // Mensagem
+    public void mensagem()
+    {
+        // Obter o cálculo
+        double ObterCalculo = calculo();
+
+        // Obter situacao
+        string obterSituacao = situacao(ObterCalculo);
+
+        //Exibir mensagem
+        Console.WriteLine("Seu imc é de "+ObterCalculo);
+        Console.WriteLine("Sua situação é "+obterSituacao);
     }
 
 }
